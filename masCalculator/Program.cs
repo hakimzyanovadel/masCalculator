@@ -27,20 +27,22 @@ namespace masCalculator
             int[,] mas = new int[height, width];
 
             Random r = new Random();
-            int k = 0;
+            //int k = 0;
            
             for (int i = 0; i < height; i++)
             {
-                int l = 0;
+                // int l = 0;
                 for ( int j = 0; j < width; j++) 
                 {
-                    mas[k, l] = r.Next(a, b);
-                    Console.Write(mas[k, l] + " ");
-                    l++;
+                    mas[i, j] = r.Next(a, b); // mas[k, l] = r.Next(a, b);
+                    Console.Write(mas[i, j] + " "); // Console.Write(mas[k, l] + " ");
+                    // l++; +
                 }
                 Console.WriteLine();
-                k++;
+                // k++;
             }
+
+            Console.ReadKey();
         }
     }
 }
